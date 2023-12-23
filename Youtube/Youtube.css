@@ -1,0 +1,224 @@
+.videogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+@media (max-width: 750px){
+    .videogrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .videogrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .videogrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.thumbnail{
+    width: 100%;
+}
+.bottomgrid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.logo{
+    margin-top: 9px;
+    border-radius: 50px;
+    width: 40px;
+}
+.title{
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.author{
+    margin-top: 7px;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+.stats{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+.Header{
+    display: flex;
+    height: 55px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #d3d3d3;
+    z-index: 1;
+}
+.left{
+    display: flex;
+    margin-left: 10px;
+    margin-right:48px; 
+    align-items: center;
+}
+.middle{
+    flex: 1;
+    display: flex;
+    margin-right: 50px;
+    max-width: 1200px;
+    min-width: 190px;
+    align-items: center;
+}
+.middle img:hover{
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+.search{
+    flex: 1;
+    height: 32px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 2px 2px 2px #eeeeee;
+    width: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.search::placeholder{
+    font-family: arial;
+    font-size: 16px;
+    padding-left: 11px;
+}
+.lefticon{
+    margin-left: 15px ;
+    height: 24px;
+}
+.searchbutton{
+    display: flex;
+    border: 1px solid #cccccc;
+    width: 66px;
+    padding-left: 16px;
+    margin-right: 8px;
+    margin-left: 0.2px;
+    align-items: center;
+    background-color: #faf7f7;
+    border: 1px solid #cccccc;
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.searchbutton .tooltip , .micbutton .tooltip , .create .tooltip , .apps .tooltip , .noti .tooltip , .loginlogo .tooltip{
+    position: absolute;
+    top: 40px;
+    background-color: #e2dddd;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+.searchbutton:hover .tooltip , .micbutton:hover .tooltip , .create:hover .tooltip , .apps:hover .tooltip , .noti:hover .tooltip , .loginlogo:hover .tooltip{
+    opacity: 1;
+}
+.micbutton{
+    width: 40px;
+    height: 40px;
+    background-color: #faf7f7;
+    border-radius: 40px;
+    border: none;
+    position: relative;
+}
+.searchicon{
+    width: 32px;
+}
+.micicon{
+    margin-top: 3px;
+    margin-left: 1px;
+}
+.righticon{
+    height: 32px;
+}
+.sidebar{
+    position: fixed;
+    bottom: 0;
+    top: 55px;
+    left: 0;
+    width: 76px;
+    z-index: 2;
+    background-color: white;
+    /* border-right: .1px solid #d3d3d3; */
+}
+.thumbrow{
+    position: relative;
+}
+.time{
+    position: absolute;
+    background-color: black;
+    color: white;   
+    right: 4px;
+    bottom: 8px;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 530;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+.count{
+    
+    background-color: #cc0000;;
+    color: white;
+    position: absolute;
+    right: 58px;
+    bottom: 27px;
+    font-size: 12px;
+    width: 10px;
+    padding-left: 4px;
+    border-radius: 7px;
+}
+.sideicon{
+    display: flex;
+    height: 76px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    flex-direction: column;
+    font-family: arial;
+    z-index: 2;
+}
+.profile{
+    border-radius: 16px;
+}
+.sideicon:hover{
+    background-color: rgb(246, 242, 242);
+    cursor: pointer;
+}
+.sideicon img{
+    height: 36px;
+}
+.body{
+    padding-top: 75px; 
+    padding-left: 98px; 
+    padding-right: 20px; 
+    background-color: #fcf9f9;
+}
+.righticon:hover{
+    cursor: pointer;
+
+}
+.lefticon:hover{
+    cursor: pointer;
+}

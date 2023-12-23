@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    
+    <div class="game">
+            <div class="title"> Rock Paper & Scissors Game !!!</div>
+
+        <div class="ImagesMoves">
+            <button class="Rock" onclick="  
+                computer();
+                playgame('Rock');
+            ">
+                👊🏼</button>
+            <button class="Paper" onclick="
+                computer();
+                playgame('Paper')
+            ">✋🏼</button>
+            <button class="Scissors" onclick="
+                computer();
+                playgame('Scissors');
+            ">✌🏼</button>
+        </div>
+
+        <div class="result"></div>
+        <div class="moves"></div>
+        <div class="scoreDisplay"></div>
+
+        <button class="Reset" onclick="
+            score.Lose = 0 , score.Win = 0 , score.Tie = 0;
+            result = '';
+            localStorage.removeItem('score');
+            update();
+            document.querySelector('.moves').innerHTML = '';
+        ">
+        Reset Score
+        </button>
+    </div>
+    <script src="rps.js"> </script>
+</body>
+</html>

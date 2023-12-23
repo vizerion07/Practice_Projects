@@ -1,0 +1,56 @@
+body{
+    color: white;
+    background-color: rgb(30, 30, 30);
+}
+.game{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    display: flex;
+    size: auto;
+}
+button{
+    height: 150px;
+    width: 150px;
+    font-size: 80px;
+    background-color: rgb(25, 25, 25);
+    border: 3px solid white;
+    border-radius: 80px;
+}
+.Reset{
+    border-radius: 0px;
+    margin-bottom: 30px;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ImagesMoves{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 18px;
+    margin-bottom: 30px;
+}
+.result{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.moves{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.scoreDisplay{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
